@@ -4,38 +4,15 @@
  */
 package Matematika;
 
-/**
- *
- * @author Difa
- */
 public class MatematikaCanggihDifa extends MatematikaDifa {
-    int pilihan;
 
-
-    
-    public MatematikaCanggihDifa(int angka1, int angka2, int pilihan) {
-        super(angka1, angka2); 
-        this.pilihan = pilihan;
+    // Metode baru bertipe data double dengan tiga parameter
+    public double operasiTigaAngka(double a, double b, double c) {
+        return (a + b) * c; // Misalnya: operasi (a + b) * c
     }
 
-
-    public void pilihan() {
-        System.out.println("1. Pengurangan");
-        System.out.println("2. Pertambahan");
-        System.out.println("3. Modulus / Sisa bagi");
-    }
-
- 
-    public void getpilihan() {
-        switch (pilihan) {
-            case 1 ->
-                System.out.println("Hasil Pengurangan " + angka1 + " - " + angka2 + " = " + pengurangan());
-            case 2 ->
-                System.out.println("Hasil Pertambahan " + angka1 + " + " + angka2 + " = " + pertambahan());
-            case 3 ->
-                System.out.println("Hasil Modulus " + angka1 + " % " + angka2 + " = " + modulus());
-            default ->
-                System.out.println("Pilihan Tidak valid!!");
-        }
+    // Contoh metode tambahan untuk kombinasi tiga angka
+    public double rataRata(double a, double b, double c) {
+        return (a + b + c) / 3;
     }
 }
